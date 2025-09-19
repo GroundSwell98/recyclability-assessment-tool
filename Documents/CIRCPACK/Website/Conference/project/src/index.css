@@ -1,0 +1,30 @@
+/* Custom font imports and overrides */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Override default fonts */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+}
+
+body, p, span, div, a, button, input, textarea, select {
+  font-family: Arial, sans-serif;
+}
+
+/* Horizontal scrolling animation for FMCG brands */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
